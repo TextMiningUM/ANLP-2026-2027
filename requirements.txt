@@ -1,0 +1,111 @@
+# =============================================================================
+# ANLP 2026-2027 — Python Dependencies
+# =============================================================================
+# Tested with Python 3.13 (recommended).
+# Python 3.10–3.12 should also work; Python 3.14+ may have compatibility
+# issues with some packages.
+#
+# Install with:  pip install -r requirements.txt
+#
+# GPU SUPPORT (NVIDIA only):
+#   This installs CPU-only PyTorch by default. For GPU acceleration:
+#   1. First uninstall: pip uninstall torch torchvision torchaudio -y
+#   2. Then install CUDA version: pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
+#   3. Works with all modern NVIDIA GPUs (RTX 30xx, 40xx, 50xx, A100, H100, etc.)
+#   4. See LOCAL_SETUP.md section 7 for full instructions
+# =============================================================================
+
+# --- Core scientific stack ---------------------------------------------------
+numpy
+pandas
+scipy
+matplotlib
+seaborn
+scikit-learn
+tqdm
+ipywidgets
+
+# --- NLP foundations ---------------------------------------------------------
+nltk
+beautifulsoup4
+gensim
+spacy
+langdetect
+transliterate
+unidecode
+
+# --- Deep learning / Transformers --------------------------------------------
+torch
+transformers
+accelerate
+sentence-transformers
+tokenizers
+
+# --- HuggingFace ecosystem ---------------------------------------------------
+datasets
+evaluate
+huggingface-hub
+
+# --- Retrieval & embeddings --------------------------------------------------
+faiss-cpu
+rank_bm25
+
+# --- NER / sequence labelling ------------------------------------------------
+python-crfsuite
+sklearn-crfsuite
+seqeval
+
+# --- Evaluation & metrics ----------------------------------------------------
+rouge-score
+bert-score
+sacrebleu
+# bleurt  # Not compatible with Python 3.13 - replaced by chrF (via sacrebleu package)
+#         # chrF is character-level F-score, works well for morphologically rich languages
+
+# --- Explainability ----------------------------------------------------------
+shap
+lime
+captum
+
+# --- Multi-modal models ------------------------------------------------------
+pillow
+torchvision
+timm
+
+# --- Speech processing -------------------------------------------------------
+librosa
+soundfile
+audioread
+pydub
+
+# --- Visualisations ----------------------------------------------------------
+plotly
+wordcloud
+svgling
+graphviz
+
+# --- String matching ---------------------------------------------------------
+python-Levenshtein
+
+# --- Graphs ------------------------------------------------------------------
+networkx
+
+# --- OpenAI (Assignments 11, 12 & 16) ---------------------------------------
+openai>=1.40.0
+openai-agents
+tiktoken
+
+# --- Jupyter notebook enhancements ------------------------------------------
+ipython
+jupyter
+notebook
+
+# --- Testing & validation ---------------------------------------------------
+pytest
+pytest-timeout
+
+# --- Utilities ---------------------------------------------------------------
+requests
+python-dotenv
+pyyaml
+jsonlines
