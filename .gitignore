@@ -21,3 +21,13 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
+
+# Test outputs (regenerated)
+notebook_test_report.json
+
+# Notebook generated files (training artifacts)
+**/*.pth
+**/*.crf.tagger
+**/results/
+**/db.sqlite3
+**/chatterbot-corpus/
